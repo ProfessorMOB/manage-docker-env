@@ -1,0 +1,16 @@
+install.sh file
+	create the ~/.devenvironments
+	create the ~/.devenvironments/docker_saves
+	move the autosave-env and load-env into the macos bin
+	exit 0
+
+uninstall.sh file
+	delete the ~/.devenvironments and ~/.devenvironments/docker_saves, if option "-o" or "--output-saves", output all saves to a tar.gz file
+	remove the autosave-env and load-env out of macos bin
+	exit 0
+autosave-env
+	input the container name, and automatically save it, if option "-p" or "--path" then output it to the desired path
+load-env
+	input the container name or if "-p" or "--path" then input the container path, and load the latest save of the container, if option "-s" or "--snapshot" then recall a snapshot (given the input which is the name of the container save) of the save (concept still a work in progress)
+
+use nvm-sh/nvm as reference to how scripts work
